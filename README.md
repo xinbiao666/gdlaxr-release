@@ -13,11 +13,18 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/xinbiao666/gdlaxr-release.git
 # Go into the repository
-cd electron-quick-start
+cd gdlaxr-release
 # Install dependencies
 npm install
 # Run the app
 npm start
+# Package the app as an installation program
+npm run dist
+# Used to generate an application directory for easy testing and debugging, rather than creating an installation package for distribution.
+npm run pack
 ```
+
+Select the outermost folder where your project is located. For example:Publish pc-web project using the project folder address as: 'D:\your-folder\pc-web'
+
