@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://la.gdlaxr.cn; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>前端项目发布</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <h1 style="height: 50px; line-height: 50px;">联安祥瑞前端项目发布</h1>
+      <div class="release-projects-menu">
+        <div class="release-projects-title">点击项目名称选择要发布的项目：</div>
+        <div class="release-projects-item">
+          <div class="item la-app">
+            <div class="projects-title" id="la-app">la-app</div>
+            <div class="select-prompt">请选择打包发布的文件夹</div>
+            <div class="handle-btn-content">
+              <button class="handle-btn select-directory" disabled>选择文件夹</button>
+              <button class="handle-btn reset" disabled>重置</button>
+            </div>
+          </div>
+          <div class="item lianan-app">
+            <div class="projects-title" id="lianan-app">lianan-app</div>
+            <div class="select-prompt">请选择打包发布的文件夹</div>
+            <div class="handle-btn-content">
+              <button class="handle-btn select-directory" disabled>选择文件夹</button>
+              <button class="handle-btn reset" disabled>重置</button>
+            </div>
+          </div>
+          <div class="item pc-web">
+            <div class="projects-title" id="pc-web">pc-web</div>
+            <div class="select-prompt">请选择打包发布的文件夹</div>
+            <div class="handle-btn-content">
+              <button class="handle-btn select-directory" disabled>选择文件夹</button>
+              <button class="handle-btn reset" disabled>重置</button>
+            </div>
+          </div>
+          <div class="item sys-web">
+            <div class="projects-title" id="sys-web">sys-web</div>
+            <div class="select-prompt">请选择打包发布的文件夹</div>
+            <div class="handle-btn-content">
+              <button class="handle-btn select-directory" disabled>选择文件夹</button>
+              <button class="handle-btn reset" disabled>重置</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commit-msg-content">
+        <div>
+          请输入发布的描述信息
+        </div>
+        <div class="msg-content">
+          <textarea placeholder="请输入发布的描述信息" maxlength="100"></textarea>
+        </div>
+      </div>
+      <div class="upload-status-board">
+        点击发布按钮开始发布项目
+      </div>
+      <button id="release-btn">发布</button>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

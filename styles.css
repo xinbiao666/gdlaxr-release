@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 750px;
+}
+
+.release-projects-menu{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+.release-projects-title{
+    height: 25px;
+    padding: 0 10px;
+}
+
+.release-projects-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.release-projects-item>.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.release-projects-item>.item:hover{
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.item-selected{
+    background-color: #f9f9f9;
+}
+
+.release-projects-item>.item>.handle-btn-content>.handle-btn{
+    width: 100px;
+}
+
+.select-prompt{
+    color: #9c9c9c;
+}
+
+.projects-title:hover{
+    cursor: pointer;
+    background-color: #cbcaca;
+}
+
+.projects-title{
+    background-color: #e6e5e5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.using-project{
+    background-color: #8efbb8;
+}
+
+.using-project:hover{
+    background-color: #33f67d;
+}
+
+.commit-msg-content{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.msg-content>textarea{
+    width: 400px;
+    min-height: 50px;
+    min-width: 200px;
+    max-width: 500px;
+    max-height: 100px;
+}
+
+.upload-status-board{
+    width: 95%;
+    box-sizing: border-box;
+    height: 150px;
+    background-color: #faf5ef;
+    color: #cbcaca;
+    padding: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+#release-btn{
+    padding: 10px 40px;
+}

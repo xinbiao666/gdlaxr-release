@@ -1,0 +1,51 @@
+{
+  "name": "gdlaxr-release",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "electron-reloader": "^1.2.3"
+  },
+  "build": {
+    "appId": "com.gdlaxr.frontReleaseManager",
+    "productName": "前端项目发布管理",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "./icon.ico"
+    }
+  },
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "archiver-utils": "^4.0.1",
+    "axios": "^1.6.7",
+    "form-data": "^4.0.0",
+    "jquery": "^3.7.1"
+  }
+}
